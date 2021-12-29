@@ -1,0 +1,3 @@
+Los datos de la tasa de compresión en función de k fueron obtenidos utilizando el archivo "main.cpp" en lugar del archivo homónimo ubicado en la carpeta "Programa". Este comprime los 4 archivos variando k entre 0 y 64 y almacena los datos en archivos .csv (uno por imagen).
+
+Los datos de tasa de compresión en función del segmento no fueron incluidos, pero para obtenerlos simplemente declare un entero inicializado en 0 dentro de la función compress, al cual se le sumaba 1 cada vez que se lee un caracter, y se imprimía el número del largo del archivo comprimido hasta el momento con el uso de la función ftell cuando (contador % largoArchivo/5 == 0).

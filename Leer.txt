@@ -1,0 +1,15 @@
+El programa a ejecutar se encuentra en la carpeta "Programa". Para ejecutarlo se debe ingresar desde la consola a esta ubicación y crear el archivo de ejecución con el comando "make", esto creará el archivo "main" que deberá ser ejecutado posteriormente. (Todo esto en Linux)
+
+Con respecto a cómo usarlo, se deberá colocar el archivo a manipular dentro de la carpeta "Programa" ubicada en la carpeta antes mencionada. Para ejecutarlo se deberá abrir la terminal en el mismo directorio y escribir el comando:
+
+./main -k kvalue -c/d infile outfile
+
+Donde se deberá escribir el valor de 'k' en 'kvalue', elegir si comprimir o descomprimir (c o d), y finalmente pasar los dos archivos a manipular. En caso de estar comprimiendo se pasará el archivo a comprimir seguido del nombre del archivo descomprimido (junto a su formato, que podrá ser por ejemplo .bin), en caso de descomprimir se pasará el nombre del archivo comprimido seguido del nombre del archivo recreado.
+
+Ejemplos:
+
+./main -k 5 -c "A.pbm" "AComprimido.bin"
+./main -k 64 -d "Acomprimido.bin" "E.pbm"
+
+Los archivos estudiados en el informe se encuentran en la carpeta "ArchivosDePrueba".
+En la carpeta "ObtencionDatos" se encuentran detalles de cómo fueron obtenidos los datos experimentales.
